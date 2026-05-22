@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.创造原数组和存放元素的数组
+        //2.查找大于十的元素
+        //3.将大于十的元素放到新数组中
+        let arr = [2, 0, 6, 1, 77, 52, 0, 52, 0, 25, 7];
+        let new_arr = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                new_arr.push(arr[i])
+            }
+        }
+        document.write(new_arr);
+
+    </script>
+</body>
+
+</html>

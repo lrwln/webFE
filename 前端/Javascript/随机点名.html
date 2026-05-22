@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let arr = []
+        function register() {
+            let n = +prompt('请问需要录入几个姓名？')
+            for (let i = 0; i < n; i++) {
+                arr.push(prompt(`请输入第${i + 1}个名字:`))
+            }
+        }
+        console.log(arr)
+        function getRandom() {
+            return Math.floor(Math.random() * arr.length)
+        }
+
+    </script>
+</body>
+
+</html>

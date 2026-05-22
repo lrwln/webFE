@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.菜单功能
+        // 2.存钱功能 需要一个变量储存
+        // 3.查询 访问先前的变量
+        // 4.退出
+        let total = 100;
+        while (1) {
+            let num = +prompt(`
+            1.取钱
+            2.存钱
+            3.查询
+            4.退出`)
+            switch (num) {
+                case 1:
+                    let reduce = +prompt('请问取出多少')
+                    total -= reduce
+                    continue;
+                case 2:
+                    let increase = +prompt('请问存多少钱')
+                    total += increase
+                    continue;
+                case 3:
+                    alert(total);
+                    continue;
+                case 4:
+                    break;
+                default:
+                    alert('请输入1-4之间的数字进行操作')
+                    continue;
+            }
+            break;
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

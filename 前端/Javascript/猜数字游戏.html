@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //获得随机数
+        function getRandom(N, M) {
+            return Math.floor(Math.random() * (M - N + 1)) + N
+        }
+        let n = +prompt('请输入最小值')
+        let m = +prompt('请输入最大值')
+        let num = getRandom(n, m)
+        while (1) {
+            let answer = +prompt('请输入你猜的数字:')
+            if (answer === num) {
+                alert('right!!!')
+                break;
+            }
+            else if (answer < num)
+                alert('Too small')
+            else if (answer > num)
+                alert('Too big')
+            else
+                alert(`请输入${n}到${m}之间的数字!!!`)
+        }
+        for (i = 0; i < 3; i++) {
+            //输入第几次猜
+            // alert("第${i+1}次")
+            let answer = +prompt(`第${i + 1}次机会,请输入你猜的数字:`)
+            if (answer === num) {
+                alert('right!!!')
+                break;
+            }
+            else if (answer < num)
+                alert('Too small')
+            else if (answer > num)
+                alert('Too big')
+            else
+                alert(`请输入${n}到${m}之间的数字!!!`)
+        }
+    </script>
+</body>
+
+</html>

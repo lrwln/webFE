@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 求任意数组中的最大值并且返回
+        // 1.定义数组（任意性）能够进行输入
+        // 2.进行最大值或最小值的比较
+        // 3.返回对应值并输出
+        let arr = []
+        let length = +prompt('请输入数组长度')
+        // 输入功能
+        for (let i = 0; i < length; i++) {
+            arr.push(+prompt(`请输入第${i + 1}个值`))
+        }
+        function sort(arr) {
+            let max = arr[0]
+            for (let i = 0; i < arr.length; i++) {
+                if (max < arr[i + 1]) {
+                    // temp = arr[i + 1]
+                    // arr[i + 1] = max
+                    max = arr[i + 1]
+                }
+            }
+            return max;
+        }
+        let value = sort(arr)
+        console.log(arr, value)
+
+
+
+    </script>
+</body>
+
+</html>

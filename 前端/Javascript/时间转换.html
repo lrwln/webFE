@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.时间转换算法 
+        // 2.将非十位数填零
+        // 3.输出对应语句
+        // 时间转换算法
+        // xs = x / 60min = x / 60 / 60h
+        // example: 100s = 1min..40s
+        // 100s -> 100 % 60=40 100 / 60=1 100 / 3600 = 0
+
+
+        let second = +prompt('请输入秒数')
+
+        function get(t) {
+            let s = parseInt(t % 60)
+            let m = parseInt(t / 60 % 60)
+            let h = parseInt(t / 60 / 60 % 60)
+            s = s < 10 ? '0' + s : s
+            m = m < 10 ? '0' + m : m
+            h = h < 10 ? '0' + h : h
+            return `${h}小时${m}分钟${s}秒`
+
+        }
+        get(second)
+        document.write(get(second));
+
+    </script>
+</body>
+
+</html>

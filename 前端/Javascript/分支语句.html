@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //简易计算机
+        let num1 = +prompt('请输入第一个数字:');
+        let num2 = +prompt('请输入第二个数字:');
+        let total = null;
+        let icon = prompt('请输入符号:');
+        switch (icon) {
+            case ('+'):
+                total = num1 + num2
+                alert(total)
+                break;
+            case ('-'):
+                total = num1 - num2
+                alert(total)
+                break;
+            case ('*'):
+                total = num1 * num2
+                alert(total)
+                break;
+            default:
+                alert('请重新输入:')
+        }
+    </script>
+</body>
+
+</html>
