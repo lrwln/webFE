@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .b {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="f">
+        <div class="b"></div>
+    </div>
+    <script>
+        const f = document.querySelector('.f')
+        const b = document.querySelector('.b')
+        f.addEventListener('mouseover', function () {
+            console.log('come')
+        })
+        f.addEventListener('mouseout', function () {
+            console.log('leave')
+        })
+        b.addEventListener('mouseover', function () {
+            console.log('come')
+        })
+        b.addEventListener('mouseout', function () {
+            console.log('leave')
+        })
+        window.addEventListener('scroll', function () { console.log('滚') })
+    </script>
+</body>
+
+</html>

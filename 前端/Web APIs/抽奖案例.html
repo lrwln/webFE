@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>一等奖: <span>???</span></h1>
+        <h2>二等奖: <span>???</span></h2>
+        <h3>三等奖: <span>???</span></h3>
+    </div>
+
+    <script>
+        const Name = ['李白', '杜甫', '周杰伦', '刘德华', '周星驰']
+        const random = Math.floor(Math.random() * Name.length)
+        const box = document.querySelectorAll('.box span')
+        console.dir('box')
+
+    </script>
+</body>
+
+</html>

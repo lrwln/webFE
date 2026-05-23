@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        localStorage.setItem('unname', '18')
+        // localStorage.removeItem('uname')
+        console.log(localStorage.getItem('unname'))
+        const obj = {
+            unname: 'li hua',
+            age: 18,
+            gender: 'female'
+        }
+        localStorage.setItem('obj', JSON.stringify(obj))
+        console.log(localStorage.getItem('obj'))
+        const str = localStorage.getItem('obj')
+        console.log(JSON.parse(str))
+    </script>
+</body>
+
+</html>

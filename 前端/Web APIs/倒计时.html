@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body><textarea name="" id="">
+    阅读京东协议，关于用户协议完全服从消费者协议并且将利益放在首位
+
+</textarea>
+    <br>
+    <button class="btn" disabled>同意(5秒)</button>
+
+    <script>
+        const btn = document.querySelector('.btn')
+        let i = 5
+        setInterval(function () {
+            i != 0 ? i-- : i = 0
+            btn.innerHTML = `同意(${i}秒)`
+
+        }, 1000)//i--是局部的事情 外部依旧还是5 所以判断条件尽量写在内部
+
+        if (i == 0) {
+            btn.disabled = false
+            btn.innerHTML = '同意'
+        }
+    </script>
+</body>
+
+</html>
